@@ -101,7 +101,7 @@ def connect_session():
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 	try:
-		s.bind(("0.0.0.0", 789))
+		s.bind(("0.0.0.0", 1024))
 		s.listen(5)
 		s.accept()
 
